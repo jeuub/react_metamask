@@ -1,0 +1,21 @@
+.button {
+  border: none;
+  border: 1px solid black;
+  padding: 7px 14px;
+  background-color: transparent;
+  border-radius: 8px;
+  cursor: pointer;
+  transform: scale(1);
+}
+
+.button:active {
+  transition: 0.2s;
+  transform: scale(0.9);
+}
+
+.button:hover {
+  transition: 0.2s;
+  border: 1px solid transparent;
+  background-color: #7bb2f3;
+  color: #f0f1f5;
+}
