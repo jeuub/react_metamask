@@ -2,7 +2,7 @@ import React from "react";
 import styles from "./button.module.scss";
 
 type ButtonProps = {
-  onClick: () => void;
+  onClick: () => any;
   children: React.ReactNode;
   loading?: boolean;
 };
