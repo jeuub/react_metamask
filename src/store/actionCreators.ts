@@ -19,7 +19,6 @@ export const requestAccounts = () => async (dispatch: AppDispatch) => {
   try {
     dispatch(AuthSlice.actions.userFetching);
     let provider = detectedProvider();
-    console.log(provider);
     const web3 = new Web3(provider);
     const accounts = await web3.eth.getAccounts()
     if (accounts.length === 0) {
